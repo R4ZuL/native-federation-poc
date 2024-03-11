@@ -1,5 +1,3 @@
-# Native Federation for Angular
+# Native Federation for Angular (PoC)
 
-Native Federation is a "browser-native" implementation of the successful mental model behind webpack Module Federation for building Micro Frontends (Plugins, etc.).
-
-This is just a Proof of Concept (PoC) based on https://github.com/angular-architects/module-federation-plugin.
+This is just a Proof of Concept (PoC) based on https://github.com/angular-architects/module-federation-plugin to test code federation at runtime between an application shell and various micro frontends. This PoC uses Angular Standalone Components.
