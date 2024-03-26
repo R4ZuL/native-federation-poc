@@ -4,8 +4,8 @@ This is just a Proof of Concept (PoC) based on https://github.com/angular-archit
 ## Prerequisites
 You must work through the following instructions in order to build each project:
 * Download and install NodeJS LTS version from https://nodejs.org/en
-* Install Angular V17+ globally with 'npm install -g @angular/cli'
-* Install TypeScript V5+ globally with 'npm install -g typescript'
+* Install Angular V17+ globally with `npm install -g @angular/cli`
+* Install TypeScript V5+ globally with `npm install -g typescript`
 
 ## Further instructions
 Follow the README of each project:
