@@ -10,6 +10,7 @@ You must work through the following instructions in order to build each project:
 ## Further instructions
 Follow the README of each project:
 * [Readme for customer-ui-lib](./customer-ui-lib/README.md)
+* [Readme for data-lib](./data-lib/README.md)
 * [Readme for mfe1](./mfe1/README.md)
 * [Readme for mfe2](./mfe2/README.md)
 * [Readme for mfe3](./mfe3/README.md)
