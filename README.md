@@ -12,4 +12,5 @@ Follow the README of each project:
 * [Readme for customer-ui-lib](./customer-ui-lib/README.md)
 * [Readme for mfe1](./mfe1/README.md)
 * [Readme for mfe2](./mfe2/README.md)
+* [Readme for mfe3](./mfe3/README.md)
 * [Readme for shell](./shell/README.md)

@@ -22,9 +22,10 @@
 
 .navi-container {
     display: flex;
+    border-style: solid;
 }
 
-.navi-home {
+.navi-shell {
     width: 25%;
     background-color: red;
     padding: 25px 0;

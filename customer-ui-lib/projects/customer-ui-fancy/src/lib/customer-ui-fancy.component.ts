@@ -8,8 +8,12 @@ import {Component, Input} from '@angular/core';
   styleUrl: './customer-ui-fancy.component.css'
 })
 export class CustomerUiComponent {
-  @Input() firstname = 'Hans';
-  @Input() surname = 'Wurst';
-  @Input() email = 'Hans.Wurst@email.com';
-  @Input() age = '55';
+  @Input() customer: CustomerData | undefined;
+}
+
+export class CustomerData {
+  id: number | undefined;
+  firstname: string | undefined;
+  surname: string | undefined;
+  age: number | undefined;
 }

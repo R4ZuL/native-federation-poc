@@ -1,6 +1,5 @@
 import { Route } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 import { loadRemoteModule } from '@softarc/native-federation-runtime';
 
 export const routes: Route[] = [
@@ -12,7 +11,7 @@ export const routes: Route[] = [
   {
     path: 'mfe1',
     loadComponent: () =>
-      loadRemoteModule('mfe1', './Component').then((m) => m.AppComponent)
+      loadRemoteModule('mfe1', './Component').then((m) => m.HomeComponent)
   },
   {
     path: 'mfe2',
@@ -21,11 +20,12 @@ export const routes: Route[] = [
   },
   {
     path: 'mfe3',
-    component: NotFoundComponent
+    loadChildren: () =>
+      loadRemoteModule('mfe3', './Routes').then((m) => m.ROUTES)
   },
   {
     // DO NOT insert routes after this one.
     path: '**',
-    component: NotFoundComponent
+    component: HomeComponent
   }
 ];

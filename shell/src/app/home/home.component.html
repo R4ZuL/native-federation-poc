@@ -1,2 +1,14 @@
-<h1>HOST</h1>
-<h2>This is the entry point of the application shell.</h2>
+<h1>Application Shell</h1>
+<h2>App Version: {{ version }}</h2>
+<h2>Federation Type: Host</h2>
+<h2>Description: This is the entry point of the application shell and part of the initial web application.</h2>
+<h2>Example:</h2>
+<mat-form-field>
+    <mat-label>Customer</mat-label>
+    <mat-select [value]="id" (selectionChange)="onCustomerChange($event.value)">
+        @for (customer of customers; track customer) {
+        <mat-option [value]="customer.id">{{customer.firstname}} {{customer.surname}}</mat-option>
+        }
+    </mat-select>
+</mat-form-field>
+<lib-customer-ui [customer]="customer"></lib-customer-ui>
