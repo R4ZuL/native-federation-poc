@@ -1,4 +1,16 @@
 <h1>MFE3</h1>
 <h2>App Version: {{ version }}</h2>
 <h2>Federation Type: Remote</h2>
-<h2>Description: This example lazy loads routes remotely. For each each route the corresponding standalone component is loaded as well.</h2>
+<h2>Description: MFE3 uses a higher angular version than the application shell.</h2>
+<h2>
+    Behaviour: MFE3 doesn't work within the application shell because native federation is loading multiple versions of angular instead of using a single (the highest) version of angular.
+    <br/>This is a known issue:
+    <ul>
+        <li><a href="https://github.com/angular-architects/module-federation-plugin/issues/169">GitHub Issue 1</a></li>
+        <li><a href="https://github.com/angular-architects/module-federation-plugin/issues/393">GitHub Issue 2</a></li>
+        <li><a href="https://www.angulararchitects.io/blog/getting-out-of-version-mismatch-hell-with-module-federation/">Blog Post 1</a></li>
+        <li><a href="https://www.angulararchitects.io/blog/multi-framework-and-version-micro-frontends-with-module-federation-the-good-the-bad-the-ugly/">Blog Post 2</a></li>
+        <li><a href="https://www.angulararchitects.io/blog/multi-framework-and-version-micro-frontends-with-module-federation-your-4-steps-guide/">Blog Post 3</a></li>
+      </ul>
+</h2>
+
